@@ -1,53 +1,173 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<title>Sinatra + Twitter Bootstrap</title>
-    <script src="/vendor/jquery-1.9.1.min.js" type="text/javascript"></script>
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
-  </head>
-  <body style="padding-top: 50px;">
+	<head>
+		<title>Sinatra + Twitter Bootstrap</title>
+		<script src="/vendor/jquery-1.9.1.min.js" type="text/javascript"></script>
+		<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
+	</head>
+	<body style="padding-top: 50px;">
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="brand" href="/">爱视推</a>
+					<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="nav-collapse collapse">
 
-            <a class="brand" href="#">
-						VideoPush
-						</a>
+						<ul class="nav">
+							<li>
+							<a href="#">Menu Item</a>
+							</li>
+							<li class="active">
+							<a href="#">Messages<span class="navbar-unread">1</span></a>
+							</li>
+							<li>
+							<a href="#">About Us</a>
+							</li>
+						</ul>
 
-            <ul class="nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/secure/place">Secret</a></li>
-            </ul>
+						<ul class="nav pull-right">
+							<li><a href="/home/login" data-link="modal" data-target="#login-modal">Login</a></li>
+							<li><a href="" data-link="modal" data-target="#signup-modal">Sign up</a></li>
+						</ul>
 
-            <ul class="nav pull-right">
-              <li class="dropdown">
-                <a href="#"
-                      class="dropdown-toggle"
-											data-toggle="dropdown">
-											Sinatra
-                      <b class="caret"></b>
-                </a>
-                <ul class="dropdown-menu">
-                      <li><a href="/login/form">Login</a></li>
-                      <li><a href="/logout">Logout</a></li>
-                </ul>
-              </li>
-            </ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="content row">
+				<div class="span8">
+
+					<div class="push">
+						<h2 class="push-title">
+							<a href="">北影动画毕业制作《十目子》</a>
+						</h2>
+						<div class="push-author">
+							<span>Halsey</span>
+							• 
+							<a href="">推荐</a>
+							• 
+							March 26, 2013                               
+						</div>
+						<div class="push-info">
+							<div class="push-video span4">
+								<p>这视频太尼玛的恶搞了，笑的我肚子疼。。。</p>
+								<blockquote class="pull-left">
+									<p>视频描述:</p>
+									动画短片《十目子》 只有一只眼睛掩藏不住负面情绪，一个笨拙的女孩的故事
+								</blockquote>
+							</div>
+							<div class="sapn3">
+								<img class="push-image" src="http://i1.tdimg.com/165/008/180/w.jpg" />
+							</div>
+						</div>
+						<div class="push-status">
+							<div class="push-btn demo-icons-24">
+								<i class="fui-eye-24">2</i>
+								<i class="fui-heart-24">6</i>
+								<i class="fui-bubble-24">11</i>
+							</div>
+							<div class="push-tag">
+								<a class="tag"><span>ruby</span></a>
+								<a class="tag"><span>rails</span></a>
+								<a class="tag"><span>vim</span></a>
+							</div>
+						</div>
+					</div>
 
 
-        </div>
-      </div>
-    </div>
+					<div class="push">
+						<h2 class="push-title">
+							<a href="">屌丝必看！逆袭全攻略！兄弟，我们只能帮你到这儿了！</a>
+						</h2>
+						<div class="push-author">
+							<span>Halsey</span>
+							• 
+							<a href="">推荐</a>
+							• 
+							March 26, 2013                               
+						</div>
+						<div class="push-info">
+							<div class="push-video span4">
+								<p>完全没看懂 有内涵哦~</p>
+								<blockquote class="pull-left">
+									<p>视频描述:</p>
+									3月26日-4月2日，3D玄幻网游巨制《诛仙2》送上美女、权力、财富、等级四重狂享盛宴，重金回馈玩家，让你玩到疯狂！
+								</blockquote>
+							</div>
+							<div class="sapn3">
+								<img class="push-image" src="http://i1.tdimg.com/164/899/898/w.jpg" />
+							</div>
+						</div>
+						<div class="push-status">
+							<div class="push-btn demo-icons-24">
+								<i class="fui-eye-24">10</i>
+								<i class="fui-heart-24">20</i>
+								<i class="fui-bubble-24">15</i>
+							</div>
+							<div class="push-tag">
+								<a class="tag"><span>屌丝</span></a>
+								<a class="tag"><span>逆袭</span></a>
+								<a class="tag"><span>诛仙</span></a>
+								<a class="tag"><span>3D</span></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="push-input span3">
+					<div class="btn btn-large btn-block btn-primary">
+						<div class="demo-icons-24">
+							<span class="fui-new-24">推荐视频</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="rsidebar span4">  
+					<h4 class="rsidebar_title">支持推荐的视频站点</h4>
+					<div class="rsidebar_content">
+						<ul>
+							<li>
+							<img src="http://www.youku.com/favicon.ico" /> 优酷
+							</li>
+							<li>
+							<img src="http://www.tudou.com/favicon.ico" /> 土豆
+							</li>
+							<li>
+							<img src="http://www.iqiyi.com/favicon.ico" /> 爱奇艺
+							</li>
+							<li>
+							<img src="http://www.letv.com/favicon.ico" /> 乐视
+							</li>
+							<li>
+							<img src="http://tv.sohu.com/favicon.ico" /> 搜狐视频
+							</li>
+							<li>
+							<img src="http://www.56.com/favicon.ico" /> 56
+							</li>
+							<li>
+							<img src="http://dianying.cntv.cn/favicon.ico" /> CNTV
+							</li>
+							<li>
+							<img src="http://v.qq.com/favicon.ico" /> 腾讯视频
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
 
 
-	<div class="container">
-		<%if @error then %>
-			<div class="alert alert-error"><%=@error%></div>
-		<% end %>
-    	<%= yield %>
-	</div>
-  </body>
+
+	</body>
 </html>
