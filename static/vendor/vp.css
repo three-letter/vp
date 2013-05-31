@@ -1,0 +1,44 @@
+
+body {
+  background: none repeat scroll 0 0 white;
+  font-family: verdana,arial,helvetica,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.content {
+  background: none repeat scroll 0 0 #F6F8F8;
+  border-radius: 6px 6px 6px 6px;
+  border-style: solid;
+  border-width: 0;
+  margin: 30px auto;
+  padding-bottom: 30px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.logo_name {
+  padding-top: 15px;
+  margin-left: 80px;
+  font-size: 12px;
+}
+
+.demo-video {
+  margin-left: 10px;
+}
+
+.vjs-controls {
+  bottom: 0px;
+  height: 27px;
+}
+
+.video-js {
+  margin-top: -50px;
+}
+
+.music_name {
+  background: none repeat scroll 0 0 white;
+  height:35px;
+}
